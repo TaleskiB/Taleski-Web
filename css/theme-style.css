@@ -1,0 +1,772 @@
+/*==========================================
+*** HTML TAG STYLES ***
+==========================================*/
+/* OLD
+
+
+  body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+  overflow-x: hidden !important;
+  color: #393944;
+  background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*/
+/*==========================================
+*** SHELL STYLES ***
+==========================================*/
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+a {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  text-decoration: none;
+  color: #393944;
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #393944;
+}
+
+button {
+  border: none;
+  outline: none !important;
+}
+
+.image-auto {
+  width: auto;
+  max-width: 100%;
+}
+
+.image-full {
+  width: 100%;
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+/*==========================================
+*** BUTTON STYLE  START ***
+==========================================*/
+/* .btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 6px 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #006e96;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  text-transform: normal;
+  border: 1px solid #006e96;
+  text-align: center;
+  position: relative;
+}
+
+.btn:hover {
+  opacity: 1;
+  color: #FFF;
+  background-color: #026589;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-color: #026589;
+}
+
+.btn.focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn.btn-lg {
+  font-size: 20px;
+  line-height: 22px;
+  padding: 13px 25px;
+  width: auto;
+  background-color: #0093c8;
+  border-color: #0093c8;
+}
+
+.btn.btn-lg:hover {
+  background-color: #008bbd;
+  border-color: #008bbd;
+}
+
+*/
+/*==========================================
+*** BUTTON STYLE END ***
+==========================================*/
+.has-dark-overlay {
+  -webkit-transition: background-color 600ms ease-in-out;
+  -moz-transition: background-color 600ms ease-in-out;
+  -o-transition: background-color 600ms ease-in-out;
+  transition: background-color 600ms ease-in-out;
+  background-color: rgba(51, 51, 51, .50);
+  background-blend-mode: overlay;
+}
+
+.has-dark-overlay:hover {
+  background-color: rgba(51, 51, 51, .60);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 990px;
+    position: relative;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1592px;
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar li {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .navbar li {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .navbar .navbar-toggler .collapse .navbar-collapse {
+    data-toggle="collapse"data-target="#navbarMenu"
+  }
+}
+
+@media (min-width: 992px) {
+  .secondpage .text2 {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 500px) {
+  .secondpage .text2 {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 500px) {
+  .secondpage .text1 {
+    font-size: 41px;
+    line-height: 43px;
+  }
+}
+
+@media (max-width: 500px) {
+  .secondpage .text1:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+    padding-top: 20px;
+    border-bottom: 3px solid #f40000;
+  }
+}
+
+@media (max-width: 585px) {
+  .introtext .weltext {
+    font-size: 45px;
+    line-height: 47px;
+    font-weight: 200;
+    color: #FFF;
+  }
+}
+
+@media (max-width: 585px) {
+  .introtext2 .center-logo {
+    height: auto;
+    width: 231px;
+  }
+}
+
+@media (max-width: 700px) {
+  .introtext3 .col .typewriter .col-sm h1 {
+    font-size: 5px;
+    margin: 0;
+  }
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
+
+/*==========================================
+*** START ***
+==========================================*/
+body {
+  font-family: Roboto;
+}
+
+/*  FOR PARALLAX EFFECT ---------------->
+
+ .firstpage {
+  background: url('../images/hero.png') no-repeat center center fixed;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+<-------------------------------------- */
+.firstpage {
+  /* Background image - First page */
+  background: url('../images/hero.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-items .nav-link {
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #FFF;
+  border-bottom: 3px solid transparent;
+  letter-spacing: 1px;
+}
+
+header .navbar-expand-sm .navbar-nav .navbar-items .nav-link:focus,
+header .navbar-expand-sm .navbar-nav .navbar-items .nav-link:hover,
+header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active,
+header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:focus,
+header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
+  border-bottom: 2px solid #f40000;
+  color: #f40000;
+}
+
+.navbar {
+  padding-top: 15px;
+}
+
+.navbar-toggler .navbar-items .nav-link {
+  font-size: 9px;
+}
+
+.introtext {
+  font-size: 65px;
+  line-height: 67px;
+  font-weight: 200;
+  color: #FFF;
+  padding-top: 221px;
+}
+
+.center-logo {
+  padding-top: 35px;
+  padding-bottom: 39px;
+}
+
+.logo1, .logo2, .logo3 .logo4 {
+  height: auto;
+  width: 130px;
+  margin-top: 0;
+  padding-bottom: 101px;
+}
+
+.textb {
+  font-size: 37px;
+  line-height: 39px;
+  padding-top: 29px;
+}
+
+/* Type Writing Effect - STYLES - START */
+.typewriter h1 {
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 21px;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .11em solid red;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .09em;
+  /* Adjust as needed */
+  animation:
+    typing 4.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: red
+  }
+}
+
+.typewriter strong {
+  font-weight: 200;
+}
+
+/* Type Writing Effect - STYLES - END */
+.btn-light {
+  font-family: Roboto;
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 100;
+  background-color: transparent;
+  color: #FFF;
+  margin-top: 250px;
+  margin-bottom: 169px;
+}
+
+/* ---> SECOND PAGE <--- */
+.secondpage {
+  /*  BACKGROUND IMAGE ---> SECOND PAGE --- ABOUT ME */
+  background: url('../images/about.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text1 {
+  font-size: 49px;
+  line-height: 51px;
+  font-weight: 200;
+  color: #000;
+  padding-top: 121px;
+}
+
+.text1:after {
+  /*  ---> Red Border below About me, and shorting it  <---  */
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  padding-top: 20px;
+  border-bottom: 3px solid #f40000;
+}
+
+.text2 {
+  font-size: 21px;
+  line-height: 31px;
+  font-weight: 300;
+  color: #000;
+  margin-top: 121px;
+  text-align: center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+/* Circle Progress Bar --- Start --- */
+.circleprogressbar {
+  margin-top: 131px;
+  margin-bottom: 70px;
+}
+
+.progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 20px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress>span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.progress .progress-left {
+  left: 0;
+}
+
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 5px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+
+.progress .progress-right {
+  right: 0;
+}
+
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+
+.progress .progress-value {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  border: 1px solid #ebebeb;
+  font-size: 32px;
+  line-height: 125px;
+  text-align: center;
+  position: absolute;
+  top: 7.5%;
+  left: 7.5%;
+}
+
+.belowcircletext {
+  font-family: Roboto;
+  font-size: 19px;
+  line-height: 51px;
+  font-weight: 300;
+}
+
+.progress.blue .progress-bar {
+  /* ---> Progress Bar Color <--- */
+  border-color: #f40000;
+}
+
+.progress.blue .progress-value {
+  /* ---> Progress Bar Color for % <--- */
+  color: #000;
+}
+
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+.progress.yellow .progress-bar {
+  /* ---> Progress Bar Color <--- */
+  border-color: #f40000;
+}
+
+.progress.yellow .progress-value {
+  /* ---> Progress Bar Color for % <--- */
+  color: #000;
+}
+
+.progress.yellow .progress-left .progress-bar {
+  animation: loading-3 1s linear forwards 1.8s;
+}
+
+.progress.pink .progress-bar {
+  border-color: #f40000;
+}
+
+.progress.pink .progress-value {
+  color: #000;
+}
+
+.progress.pink .progress-left .progress-bar {
+  animation: loading-4 0.4s linear forwards 1.8s;
+}
+
+.progress.green .progress-bar {
+  border-color: #f40000;
+}
+
+.progress.green .progress-value {
+  color: #000;
+}
+
+.progress.green .progress-left .progress-bar {
+  animation: loading-5 1.2s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(155deg);
+    transform: rotate(155deg);
+  }
+}
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(131deg);
+    transform: rotate(131deg);
+  }
+}
+
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(91deg);
+    transform: rotate(91deg);
+  }
+}
+
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(169deg);
+    transform: rotate(169deg);
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .progress {
+    margin-bottom: 20px;
+  }
+}
+
+/* Circle Progress Bar --- END --- */
+
+
+/* Third PAGE */
+
+/*  BACKGROUND IMAGE ---> THIRD PAGE --- PORTFOLIO */
+.thirdpage {
+  background: url('../images/portfolio.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.txt1 {
+  font-size: 29px;
+  line-height: 31px;
+  font-weight: 200;
+  color: #FFF;
+  padding-top: 121px;
+}
+
+.txt2 {
+  font-size: 49px;
+  line-height: 51px;
+  font-weight: 400;
+  color: #FFF;
+  padding-top: 11px;
+}
+
+.txt2:after {
+  /*  ---> Red Border below About me, and shorting it  <---  */
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  padding-top: 20px;
+  border-bottom: 3px solid #f40000;
+}
+
+.carousel {
+  margin-bottom: 51px;
+}
+
+.carousel-indicators {
+  margin-top: 300px;
+}
+
+/* COUNTER */
+
+.counter {
+  /*  background-color:#f5f5f5;  */
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+.count-title {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: normal;
+    color: #FFF;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-text {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.fa-2x {
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #f40000;
+}
+
+.counter {
+  margin-bottom: 100px;
+}
+
+
+/*  BACKGROUND IMAGE ---> FOURTH PAGE --- TESTIMONIALS */
+.fourthpage {
+  background: url('../images/testemonial.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.txt5 {
+  font-size: 47px;
+  line-height: 49px;
+  font-weight: 300;
+  color: #000;
+  padding-top: 111px;
+}
+
+.txt5:after {
+  /*  ---> Red Border below About me, and shorting it  <---  */
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+  padding-top: 20px;
+  margin-bottom: 99px;
+  border-bottom: 3px solid #f40000;
+}
+
+
+/*==========================================
+*** END ***
+==========================================*/
+/* responsive css */
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 575.98px) {
+  .feature-single.flip {
+    min-height: 580px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {}
