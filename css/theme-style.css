@@ -756,7 +756,6 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
   border-bottom: 3px solid #f40000;
 }
 
-
 /* TESTIMONIALS SLIDER CODE */
 
 .testitext h1 {
@@ -807,7 +806,7 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
 
 .carousel .overview b {
 	text-transform: uppercase;
-	color: #7AA641;
+	/* color: #f40000; */
 }
 
 .carousel .carousel-control {
@@ -849,8 +848,84 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
 	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
 }
 
+.testimo {
+  margin-bottom: 100px;
+}
+
 /* TESTIMONIALS SLIDER CODE  END */
 
+
+/* Fifth Page */
+
+/*  BACKGROUND IMAGE ---> FIFTH PAGE --- CONTACT ME */
+.fifthpage {
+  background: url('../images/contact.png');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.txt6 {
+  font-size: 47px;
+  line-height: 49px;
+  font-weight: 300;
+  color: #FFF;
+  padding-top: 111px;
+}
+
+.txt6:after {
+  /*  ---> Red Border below About me, and shorting it  <---  */
+  content: "";
+  display: block;
+  margin: 0 auto;
+  max-width: 21%;
+  padding-top: 20px;
+  margin-bottom: 99px;
+  border-bottom: 3px solid #f40000;
+}
+
+.baletxt h1 {
+
+  font-size: 23px ;
+  line-height: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.firstcol1 {
+  
+  text-align: center;
+}
+
+.firstcol1 h1 {
+  font-size: 23px ;
+  line-height: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.firstcol1 a {
+  color:#FFF;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.firstcol1 a:hover,
+.firstcol1 a:focus {
+  color:#FFF;
+  text-decoration: underline;
+}
+
+.red {
+    color:red;
+}
+
+.form-area {
+  padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+}
 
 /*==========================================
 *** END ***
