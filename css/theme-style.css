@@ -366,15 +366,26 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
 }
 
 /* Type Writing Effect - STYLES - END */
-.btn-light {
+
+.btn-light1 {
   font-family: Roboto;
   font-size: 23px;
   line-height: 25px;
   font-weight: 100;
   background-color: transparent;
   color: #FFF;
+  border-color: #f40000;
   margin-top: 250px;
   margin-bottom: 169px;
+}
+
+.btn-light1:active,
+.btn-light1:focus,
+.btn-light1:hover,
+.btn-light1:visited {
+  color: #212529;
+  background-color: #dae0e5;
+  border-color: #d3d9df;
 }
 
 /* ---> SECOND PAGE <--- */
@@ -866,6 +877,10 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
   background-size: cover;
 }
 
+.fifthpage .txt6 h1 {
+  font-weight: 300;
+}
+
 .txt6 {
   font-size: 47px;
   line-height: 49px;
@@ -894,7 +909,7 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
 }
 
 .firstcol1 {
-  
+
   text-align: center;
 }
 
@@ -903,6 +918,7 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
   line-height: 25px;
   font-weight: 300;
   color: #fff;
+  text-transform: uppercase;
 }
 
 .firstcol1 a {
@@ -915,16 +931,47 @@ header .navbar-expand-sm .navbar-nav .navbar-items .nav-link.active:hover {
 .firstcol1 a:hover,
 .firstcol1 a:focus {
   color:#FFF;
-  text-decoration: underline;
+  text-decoration: underline red;
 }
 
 .red {
-    color:red;
+    color:red !important;
 }
 
 .form-area {
   padding: 10px 40px 60px;
 	margin: 10px 0px 60px;
+}
+
+.btn-light {
+  color: #FFF;
+  background-color: rgba(0, 123, 255, 0);
+  border-color: #f40000
+}
+
+.btn-light:active,
+.btn-light:focus,
+.btn-light:visited {
+  color: #212529;
+  background-color: #dae0e5;
+  border-color: #d3d9df;
+}
+
+
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  color: #212529;
+  background-color: #dae0e5;
+  border-color: #d3d9df;
+}
+
+.fa-facebook:hover,
+.fa-facebook:focus {
+  color: #415a9a;
+}
+
+.fa-linkedin:hover,
+.fa-linkedin:focus {
+  color: #2a7bba;
 }
 
 /*==========================================
